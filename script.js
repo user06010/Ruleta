@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 const spinButton = document.getElementById('spin');
 const resultText = document.getElementById('result');
 
-const segments = ['Reto', 'Verdad', 'Beso', 'Tortazo', 'Cubata Gratis', 'Chupito Gratis'];
+const segments = ['Beso', 'Tortazo', 'Chupito', 'Beso', 'Tortazo', 'Chupito'];
 const colors = ['#FF6347', '#FFA500', '#FFD700', '#ADFF2F', '#40E0D0', '#1E90FF'];
 let currentAngle = 0;
 let spinAngleStart = 0;
@@ -49,7 +49,7 @@ function stopRotateWheel() {
     const degrees = (currentAngle * 180 / Math.PI) + 90;
     const arcd = (360 / segments.length);
     const index = Math.floor((360 - degrees % 360) / arcd);
-    resultText.innerText = `¡Felicidades! Te ha tocado: ${segments[index]}`;
+    resultText.innerText = `Te ha tocado: ${segments[index]}`;
 }
 
 function startSpin() {
