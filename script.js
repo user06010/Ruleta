@@ -23,7 +23,7 @@ function drawSegment(angle, index) {
     ctx.rotate(angle + Math.PI / 6);
     ctx.textAlign = "right";
     ctx.fillStyle = "#fff";
-    ctx.font = "bold 20px ComicSans";
+    ctx.font = "bold 20px Arial";
     ctx.fillText(segments[index], 240, 10);
     ctx.restore();
 }
